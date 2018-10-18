@@ -39,9 +39,31 @@ private:
     }
 
     void perform(operation* operations) {
+        int h = stack.top();
         stack.pop();
-        
+        int h2 = stack.top();
+        stack.pop();
+        result = operations->perform(h, h2);
+        stack.push(result);
     }
+
+public:
+    int process_form(std::string formula) {
+        std::istringstream iss(formula);
+        std::string operand;
+        while (iss >> operand) {
+            std::istringstream iss2(operand);
+
+            int n;
+            if (iss2 >> n) {
+                stack.push(n);
+            } else {
+                perform(operation_type(operand[0]));
+            }
+        }
+        return result;
+    }
+
 
 };
 

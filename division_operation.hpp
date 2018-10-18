@@ -1,6 +1,3 @@
-//
-// Created by Sonic on 2018-10-17.
-//
 #include "abstract_operation.hpp"
 #ifndef LAB5_DIVISION_OPERATION_HPP
 #define LAB5_DIVISION_OPERATION_HPP
