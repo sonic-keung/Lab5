@@ -61,8 +61,6 @@ public:
                 stack.push(n);
             } else {
                 perform(operation_type(operand[0]));
-                stack.pop();
-                stack.pop();
             }
         }
         return result;
