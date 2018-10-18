@@ -8,7 +8,7 @@ public:
 
     subtraction_operation() : abstract_operation(OPERATION_CODE) {};
 
-    ~subtraction_operation() {};
+    virtual ~subtraction_operation() {};
 
     int perform(int a, int b) {return a - b;};
 

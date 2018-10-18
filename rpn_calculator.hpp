@@ -22,16 +22,16 @@ private:
         operation* pointer;
 
         switch (operations) {
-            case '+':
+            case addition_operation::OPERATION_CODE:
                 pointer = new addition_operation();
                 break;
-            case '-':
+            case subtraction_operation::OPERATION_CODE:
                 pointer = new subtraction_operation();
                 break;
-            case '*':
+            case multiplication_operation::OPERATION_CODE:
                 pointer = new multiplication_operation();
                 break;
-            case '/':
+            case division_operation::OPERATION_CODE:
                 pointer = new division_operation();
                 break;
             default:

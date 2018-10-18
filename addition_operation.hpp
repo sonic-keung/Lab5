@@ -8,7 +8,7 @@ public:
 
     addition_operation() : abstract_operation(OPERATION_CODE) {};
 
-    ~addition_operation() {};
+    virtual ~addition_operation() {};
 
     int perform(int a, int b) {return a + b; };
 

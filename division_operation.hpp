@@ -8,7 +8,7 @@ public:
 
     division_operation(): abstract_operation(OPERATION_CODE) {};
 
-    ~division_operation() {};
+    virtual ~division_operation() {};
 
     int perform(int a, int b) {return a / b;};
 
