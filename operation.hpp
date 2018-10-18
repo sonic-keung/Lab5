@@ -1,7 +1,4 @@
-//
-// Created by Sonic on 2018-10-17.
-//
-
+#pragma once
 #ifndef LAB5_OPERATION_HPP
 #define LAB5_OPERATION_HPP
 class operation {

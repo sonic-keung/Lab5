@@ -9,6 +9,8 @@
 #include "division_operation.hpp"
 #include "operation.hpp"
 
+#pragma once
+
 #ifndef LAB5_RPN_CALCULATOR_HPP
 #define LAB5_RPN_CALCULATOR_HPP
 class rpn_calculator  {
@@ -43,7 +45,7 @@ private:
         stack.pop();
         int h2 = stack.top();
         stack.pop();
-        result = operations->perform(h, h2);
+        result = operations->perform(h2, h);
         stack.push(result);
     }
 
@@ -59,11 +61,12 @@ public:
                 stack.push(n);
             } else {
                 perform(operation_type(operand[0]));
+                stack.pop();
+                stack.pop();
             }
         }
         return result;
     }
-
 
 };
 

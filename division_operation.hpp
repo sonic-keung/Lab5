@@ -1,4 +1,5 @@
 #include "abstract_operation.hpp"
+#pragma once
 #ifndef LAB5_DIVISION_OPERATION_HPP
 #define LAB5_DIVISION_OPERATION_HPP
 class division_operation : public abstract_operation {

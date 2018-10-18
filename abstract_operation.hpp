@@ -1,4 +1,5 @@
 #include "operation.hpp"
+#pragma once
 #ifndef LAB5_ABSTRACT_OPERATION_HPP
 #define LAB5_ABSTRACT_OPERATION_HPP
 class abstract_operation : public operation {
